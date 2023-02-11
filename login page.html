@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Property Website</title>
+<link rel="stylesheet" type="text/css" href="css/loginstyle.css">
+</head>
+<body onload="slider()">
+    <div class="total">
+        <nav>
+            <div class="logo">
+                <h1>StarHOME</h1>
+            </div>
+            <!--  <div class="heading"><h1>SELLER'S PAGE</h1></div> -->
+            <!--<img src="images/menu.png" class="menu-icon"> -->
+        </nav>
+        <div class="box">
+            <div class="col1">
+                <h1>Explore <br> Best Property</h1>
+                <p>Make Your Dream Come True.</p>
+                <button type="button" onclick="btnclicked()">login</button>
+            </div>
+            <div class="col2">
+                <img src="images/pic5.jpg" style="height: 600px; width: 1000px" id="banner" >
+            </div>
+            <ul>
+                <li class="btn active"></li>
+                <li class="btn"></li>
+                <li class="btn"></li>
+            </ul>
+
+            <div class="1col"></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    var btn =document.getElementsByClassName("btn");
+    var banner = document.getElementById("banner");
+    var images = new Array(
+        "images/pic5.jpg",
+        "images/pic6.jpg",
+        "images/pic3.png"
+    )
+    var len=images.length;
+    var i=0;
+    function slider(){
+        if(i>len-1){
+            i=0;
+        }
+        banner.src=images[i];
+        animation();
+        btn[i].classList.add("active");
+        i++;
+        setTimeout('slider()',3000);
+    }
+    function animation()
+    {
+
+        for(b of btn){
+        b.classList.remove("active");
+        }
+    }
+    function btnclicked(){
+        document.location.href="login form.html";
+    }
+     
+</script>
+</body>
+</html>

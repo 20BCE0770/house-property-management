@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.table{
+    width: 80%;
+    box-shadow:0 0 20px 20px rgba(0,0,0,0.2);
+    margin: 50px 0 0 100px;
+    border-radius: 12px;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+ 
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  .ta1 tr:nth-child(even){background-color: #f2f2f2}
+
+  .add{
+      margin: 20px 0 0 1330px;
+  }
+
+  .btn{
+      width: 100px;
+      border-radius: 10px;
+      background-color:white ;
+  }
+
+  .btn:hover{
+      background-color: red;
+      color: white;
+  }
+
+  .add_detail{
+      width: 1000px;
+      border: 0ch;
+  }
+
+  .add_detail tr{
+      height: 40px;
+  }

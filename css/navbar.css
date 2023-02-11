@@ -1,0 +1,114 @@
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color:lightblue;
+}
+
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a:hover{
+    color: red;
+}
+.logo{
+    flex: 1;
+}
+
+a{
+    text-decoration:black;
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+}
+
+.logo img{
+    width: 170px;
+    cursor: pointer;
+}
+
+.menu{
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: fit-content;
+    top: 80px;
+    right: 0;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+
+
+.menu::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 21px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    transform: rotate(45deg);
+
+}
+
+.dropbtn{
+    width: 25px;
+    height: 25px;
+    background-image: url("images/menu.png");
+    background-size: cover;
+    border-radius: 50%;
+    border: none;
+}
+
+.menu ul li{
+    list-style: none;
+    padding: 10px 0;
+    margin-top: 9px;
+    border-top: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu ul li img{
+    max-width: 30px;
+    height: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.menu ul li:hover img{
+    opacity: 1;
+}
+
+.menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: medium;
+    color: #555;
+    font-weight: bold;
+    transition: 0.5s;
+
+}
+
+.menu ul li:hover a{
+    color: red;
+}
+
+.show {display: block;}

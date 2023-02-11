@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Property Website</title>
+<link rel="stylesheet" href="css/services.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Righteous&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/2310faca66.js" crossorigin="anonymous"></script>
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="total">
+        <section id="nav">
+            <nav class="navbar navbar-expand-lg navbar-light" id="navbar-top">
+                <div class="container-fluid" >
+                  <a class="navbar-brand" href="#"><h1>StarHOME</h1></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav n1 ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#explore">Explore</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#support">Contact Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="logout.php">Logout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </section>
+        <div class="box">
+            <div class="col1">
+                <h1>Home Services</h1>
+                <img src="images/pic20.jpg">
+            </div>
+            <div class="col2">
+                <div class="form">
+                    <div class="card">
+                        <h2>Home Services</h2>
+                        <div class="inner">
+                            <div class="card-front">
+                                <form action="service.php" method="POST">
+                                    <div class="selection">
+                                        <label for="address" class="l1">Address </label>
+                                        <br>
+                                        <input type="text" class="address" name="address" placeholder="area / city / state " required>
+                                        <br>
+                                        <label for="houseno" class="l1">House no</label>
+                                        <br>
+                                        <input type="text" class="houseno" name="houseno" placeholder="house no / floor / pincode" required>
+                                        <br>
+                                        <label for="phone" class="l1">Phone no</label>
+                                        <br>
+                                        <input type="text" class="phone" name="phone" placeholder="mobile no"> 
+                                    </div>
+                                    <br>
+                                    <div class="op"> 
+                                        <input type="checkbox" name="options[]" id="service" value="plumbing" ><span>plumber</span><br>
+                                     <input type="checkbox" name="options[]" id="service" value="electrican"><span>electrican</span><br>
+                                     <input type="checkbox" name="options[]" id="service" value="carpenter"><span>carpenter</span><br>
+                                     <input type="checkbox" name="options[]" id="service" value="painting"><span>Painting</span><br>
+                                     <input type="submit"  name="mulserv" value="submit" class="submit" placeholder="submit">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+         function menutoggle() {
+           document.getElementById("myDropdown").classList.toggle("show");
+         }
+         window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+               var dropdowns = document.getElementsByClassName("dropdown-content");
+               var i;
+               for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                     openDropdown.classList.remove('show');
+                  }
+               }
+            }
+         }
+     </script>
+     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
